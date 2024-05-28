@@ -25,7 +25,7 @@ from twisted.internet.protocol import Factory, Protocol
 from .__common__ import EnigmaLight_log as log, rgbToHex, showMessage, showError
 
 import os
-import imp
+import importlib.util
 import re
 
 global listener, server_to_stop

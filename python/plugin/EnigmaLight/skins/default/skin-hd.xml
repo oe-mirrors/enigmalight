@@ -40,10 +40,6 @@
         <widget name="btn_yellow" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnigmaLight/skins/default/hd/buttons/btn_yellow-fs8.png" zPosition="6" position="585,606" size="22,22" alphatest="blend"/>
         <widget name="txt_yellow" position="625,598" zPosition="9" size="300,37" font="OpenSans;16" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1"/>
 
-         <!-- moodlamp button -->
-        <widget name="btn_yellow" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnigmaLight/skins/default/hd/buttons/btn_yellow-fs8.png" zPosition="6" position="745,606" size="22,22" alphatest="blend"/>
-        <widget name="txt_yellow" position="785,598" zPosition="9" size="150,37" font="OpenSans;16" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1"/>
-
          <!-- Statusbar -->
         <widget name="statusbar" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnigmaLight/skins/default/hd/images/statusbar-fs8.png" zPosition="10" position="0,670" size="1280,50" alphatest="blend"/>
         <widget name="txt_statusbar" transparent="1" zPosition="20" valign="center" position="28,686" size="950,30" font="OpenSans; 18" foregroundColor="#ffffff" backgroundColor="#000000" halign="left"/>

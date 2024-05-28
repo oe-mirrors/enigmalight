@@ -18,7 +18,7 @@ from .models.info import getBasePath, getPublicPath, getViewsPath
 from twisted.web import server, http, static, resource, error
 from Cheetah.Template import Template
 
-import imp
+import importlib.util
 import sys
 import json
 import gzip
