@@ -353,14 +353,14 @@ bool CGuiServer::ParseGet(CGuiClient* client, const char *message, CMessage& mes
   }
   else if (message[0] == 'f' && message[1] == 'p') //fps
   {
-    char fps[6];
-    sprintf(fps, "%2.1f", m_fps);
+    char fps[16];
+    snprintf(fps, sizeof(fps), "%2.1f", m_fps);
     data.SetData(fps);//Get fps
   }
   else if (message[0] == 'r' && message[1] == 'e') //res
   {
-    char res[20];
-    sprintf(res, "%dx%d(%dx%d)", m_xres, m_yres, m_xres_orig, m_yres_orig);
+    char res[48];
+    snprintf(res, sizeof(res), "%dx%d(%dx%d)", m_xres, m_yres, m_xres_orig, m_yres_orig);
     data.SetData(res);//resolution
   }
   else if (message[0] == 'e' && message[1] == 'r') //error

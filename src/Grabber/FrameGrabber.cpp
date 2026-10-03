@@ -77,16 +77,13 @@ bool CFrameGrabber::Setup()
 		m_errorGiven = false;
 		m_fps=0;
 		}
-		if(m_grabber->m_debug)
-		{
-		    //Set fps counters
-		    fps_lastupdate		= GetTimeUs();
-		    fps_framecount		= 0;
-		    m_lastupdate		= GetTimeSec<long double>();
-		    m_lastmeasurement	= m_lastupdate;
-		    m_measurements 		= 0.0;
-		    m_nrmeasurements 	= 0.0;
-		}
+		//Set fps counters, updateInfo() uses them in every mode
+		fps_lastupdate		= GetTimeUs();
+		fps_framecount		= 0;
+		m_lastupdate		= GetTimeSec<long double>();
+		m_lastmeasurement	= m_lastupdate;
+		m_measurements 		= 0.0;
+		m_nrmeasurements 	= 0.0;
 
 		return true; // All ok? then return true and start Run();
   	}
